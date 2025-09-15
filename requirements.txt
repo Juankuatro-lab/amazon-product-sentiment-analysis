@@ -1,24 +1,41 @@
-# Extracteur d'avis Amazon - Dépendances Python
+# Extracteur d'avis Amazon - Toutes approches
 # Installation: pip install -r requirements.txt
 
 # Framework web pour l'interface utilisateur
 streamlit>=1.28.0
 
-# Requêtes HTTP pour scraper Amazon
+# Approche de base
 requests>=2.31.0
-
-# Parsing HTML pour extraire les avis
 beautifulsoup4>=4.12.0
 
-# Manipulation de données et export CSV
-pandas>=2.0.0
+# Selenium + anti-détection
+selenium>=4.15.0
+webdriver-manager>=4.0.0
 
-# Analyse de sentiment des commentaires
+# Playwright (plus playwright install chromium)
+playwright>=1.40.0
+
+# Scrapy + middlewares
+scrapy>=2.11.0
+
+# Analyse et traitement des données
+pandas>=2.0.0
 textblob>=0.17.1
 
-# Dépendances additionnelles pour le bon fonctionnement
+# Parsers HTML additionnels
 lxml>=4.9.0
 html5lib>=1.1
 
-# Optionnel: pour améliorer les performances
+# Gestion des expressions régulières
+regex>=2023.10.3
+
+# Support pour l'analyse de données
 numpy>=1.24.0
+
+# Anti-détection avancée
+fake-useragent>=1.4.0
+undetected-chromedriver>=3.5.0
+
+# Proxies et rotation
+requests[socks]>=2.31.0
+pysocks>=1.7.1
